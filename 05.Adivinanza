@@ -1,0 +1,18 @@
+Algoritmo Adivinanza
+	Definir num1, num2 Como Entero
+	Escribir "Vamos a jugar a las adivinanzas"
+	Escribir "El sistema elegirá un número al azar entre 0 y 9"
+	Escribir "Si aciertas ganarás un premio!!"
+	Escribir "Si fallas... puedes volver a empezar jaja"
+	Repetir
+		Escribir "Por favor digita un número del 0 al 9"
+		Leer num1
+	Hasta Que num1 >=0 y num1 < 10
+	num2 = azar(11)
+	Si num1 == num2 Entonces
+		Escribir "Acertaste!!! Ganaste un viaje a Narnia"
+	SiNo
+		Escribir "Lo siento... inténtalo de nuevo"
+	Fin Si
+	
+FinAlgoritmo

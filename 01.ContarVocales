@@ -1,0 +1,18 @@
+Algoritmo ContarVocales
+	Definir palabra, control, mayu como caracter
+	Definir largoPalabra, contador, recorredor, suma Como Entero
+	Escribir "Por favor escribe una palabra y el programa te dirá cuantas vocales tiene:"
+	Leer palabra
+	mayu = Mayusculas(palabra)
+	largoPalabra = Longitud(palabra)
+	recorredor = 0
+	suma = 0
+	Repetir
+		control = SubCadena(mayu,recorredor,recorredor)
+		Si control == "A" o control == "E" o control == "I" o control == "O" o control == "U"  Entonces
+			suma = suma + 1
+		Fin Si
+		recorredor = recorredor +1
+	Hasta Que recorredor == largoPalabra+1
+	Escribir "La palabra tiene ",suma, " vocales"
+FinAlgoritmo
